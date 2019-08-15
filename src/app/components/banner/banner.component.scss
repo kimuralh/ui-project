@@ -1,0 +1,20 @@
+.banner-component{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color:white;
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+    .banner-content{
+        position: absolute;
+        width: 35%;
+        height: 30%;
+        text-align: center;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

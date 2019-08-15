@@ -1,0 +1,9 @@
+.toolbar-component{
+    display: flex;
+    .logo{
+        justify-content: flex-start;
+    }
+    .link-group{
+        justify-content: flex-end;
+    }
+}

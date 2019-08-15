@@ -1,0 +1,24 @@
+<div class="resumes-component">
+    <h3> Destaques da semana </h3>
+    <div class="cards-container">
+
+        <game-resume-card class="resume-card" *ngFor = "let card of cards" [card]="card"></game-resume-card>
+
+        <!--
+        <div class="resume-card" *ngFor = "let card of cards">
+            <div class="card-image">
+                <img [src]="card.imgSrc" alt="nome card">
+            </div>
+              <div class="card-text">
+                <p> {{card.cardText}}</p>
+            </div>
+        </div>
+        -->
+
+    </div>
+    
+</div>
+
+
+
+

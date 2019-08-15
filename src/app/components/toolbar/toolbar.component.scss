@@ -1,0 +1,27 @@
+.toolbar-component{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    .logo-container{
+        width: 150px;
+        .logo{
+            width: 100%;
+            height: auto;
+        }
+
+    }
+    .link-group{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            padding: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width:900px){
+    .toolbar-component .logo-container{
+        width: 15%;
+    }
+}
