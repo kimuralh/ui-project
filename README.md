@@ -1,3 +1,20 @@
+# Descricao
+Projeto feito com o intuito de treinar uso das seguintes competências:
+
+- Angular
+  - Componentização
+  - ngFor
+  - Requisições à API
+  
+- Html
+
+- Css
+  - Flexbox
+  - Boas praticas (IT)
+  - Efeitos
+  - Animações
+  
+- UI
 # UiProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
