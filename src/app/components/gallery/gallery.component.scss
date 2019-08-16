@@ -1,0 +1,15 @@
+.gallery-component{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .gallery-container{
+        width: 85%;
+        display: flex;
+        justify-content: flex-start;
+        padding: 20px 0px;
+        flex-wrap: wrap;
+        img{
+            
+        }
+    }
+}
