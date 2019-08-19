@@ -1,0 +1,15 @@
+.contact-container{
+    .contact-form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .form-input{
+            margin: 20px;
+        }
+        button{
+            width: 100px;
+            height: 50px;
+        }
+    }
+}

@@ -1,7 +1,13 @@
 <div class="gallery-component">
   <p>Galeria</p>
+  <div *ngIf = "isVisible" class="modal">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img class="modal-content" [src] = "modalImage">
+  </div>
   <div class="gallery-container">
-      
+      <div class="gallery-box">
+        <img *ngFor = "let image of imagens" [src] = image.src (click) = "openModal(image)">
+      </div>
   </div>
   <!-- modal de exibicao pode ser  tanto  feito  aqui somente como elemento deste componente galeria
   ou componentizado
