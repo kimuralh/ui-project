@@ -1,16 +1,54 @@
 .advertise-bar-component{
     width: 100%;
-    display: flex;
-    justify-content: center;
+    height: 0px;
     background-color: lightblue;
-    padding: 30px 0px;
-    .adv-text{
-        
-    }
-    .adv-btn{
-        
+    //height: auto;
+    transition: all 1.5s;
+    .advertise-box{
+        width: 100%;
 
+        display: flex;
+        justify-content: center;
+ 
+        padding: 30px 0px;
+        .adv-text{
+            
+        }
+        .adv-btn{
+            
+    
+        }
     }
+    
     // TO-DO
     //colocar animação aqui de aparecimento da barra
 }
+
+.advertise-bar-component.visivel{
+    height: 80px;
+    .advertise-box{
+        animation-name: showBox;
+        animation-duration: 3s;
+    }
+    @keyframes showBox {
+        0% {
+            opacity: 0;
+            translate: (-40rem);
+        }
+        100% {
+            opacity: 1;
+        }   
+    }
+    //animation: showBox .10s ease-out;
+}
+
+
+/*
+.display-visible{
+    display: flex;
+}
+
+.display-not-visible{
+    display: none;
+}
+*/

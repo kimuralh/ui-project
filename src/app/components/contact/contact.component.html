@@ -1,3 +1,14 @@
-<p>
-  contact works!
-</p>
+<div class="contact-container">
+  <h1> Formulário para Contato </h1>
+  <form [formGroup]="contatoForm" (ngSubmit) = "submitFormulario()" class = "contact-form">
+    <div class="form-input">
+      <p>Nome</p>
+      <input type="text" class="" placeholder="Digite seu nome" formControlName = "name">
+    </div>
+    <div class="form-input">
+      <p>Email</p>
+      <input type="text" class="" placeholder="Digite seu email" formControlName = "email">
+    </div>
+    <button type="submit" class="form-button" > Submit </button>
+  </form>
+</div>
