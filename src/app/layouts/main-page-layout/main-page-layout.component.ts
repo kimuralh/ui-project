@@ -42,9 +42,12 @@ export class MainPageLayoutComponent implements OnInit {
   ]
   //cards = [this.card1,this.card2,this.card3]
 
+
+  
   constructor() { }
 
   ngOnInit() {
+ 
   }
 
 }

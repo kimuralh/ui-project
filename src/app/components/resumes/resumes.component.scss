@@ -8,7 +8,18 @@
             flex: 0 1 300px;
             display: flex;
             flex-direction: column;
-            
+            height: 700px;
+            transition: all 1s;
+
+        
+        }
+        .resume-card:hover{
+            flex: 1 0 500px;
+            transition: all 1.5s;
+        }
+        @keyframes zoom {
+            from {transform: scale(0)}
+            to {transform: scale(1)}
         }
     }
 }
