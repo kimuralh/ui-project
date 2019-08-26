@@ -13,6 +13,6 @@
 <div class="card-image">
     <img [src]="card.imgSrc" alt="nome card">
 </div>
-<div class="card-text">
-  <p> {{card.cardText}}</p>
+<div [innerHTML] = "card.cardText" class="card-text">
+  <!-- <p> {{card.cardText}}</p>-->
 </div>

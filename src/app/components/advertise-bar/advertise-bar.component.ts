@@ -10,6 +10,7 @@ export class AdvertiseBarComponent implements OnInit {
       textAdv: 'Não se esqueça de se inscrever na nossa newsletter!',
       textBtn: 'Clique Aqui'
   }
+  //meu_html = "<p>Kingdom Hearts is an action RPG published and developed by <a href=\"/square-co-ltd/3010-6323/\" data-ref-id=\"3010-6323\">Squaresoft</a>, and produced with the cooperation of the Walt Disney Company. The game incorporates many characters from Disney's animated works and several of <a href=\"/square-enix/3010-104/\" data-ref-id=\"3010-104\">Square Enix's</a> <a href=\"/final-fantasy/3025-194/\" data-ref-id=\"3025-194\">Final Fantasy</a> games. Kingdom Hearts sold 5.6 million copies worldwide (It was Square's highest selling PS2 game in North America) and was critically acclaimed for incorporating the two distinct worlds of Disney and Final Fantasy into one entertaining game.</p>"
   //@Input() isVisible : boolean
   
   /*

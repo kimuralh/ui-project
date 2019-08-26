@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { MainPageLayoutComponent } from './layouts/main-page-layout/main-page-layout.component';
 import { ResumeCardComponent } from './components/resume-card/resume-card.component';
 import { DescriptionCardComponent } from './components/description-card/description-card.component';
+import { ApiService } from './services/api.service';
 
 
 @NgModule({
@@ -34,9 +36,10 @@ import { DescriptionCardComponent } from './components/description-card/descript
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

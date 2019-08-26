@@ -2,6 +2,8 @@
 <!--<div class="advertise-bar-component " (scroll)="scrollHandler($event)">-->
 <div class="advertise-bar-component" > 
     <div class="advertise-box">
+        <!-- caso queira injetar html puro em vez de texto, pode utilizar a propriedade innerHTML de um elemento -->
+        <!-- <div [innerHTML]="meu_html"></div>  -->
         <div class="adv-text">{{advertise.textAdv}}</div>
         <button class="adv-btn" (click)="makeVisible()"> {{advertise.textBtn}} </button>
     </div>
