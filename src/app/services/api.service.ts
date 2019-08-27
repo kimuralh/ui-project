@@ -16,12 +16,18 @@ export class ApiService
         let httpParams = new HttpParams()
                             .set('api_key','0325079601bfa0c8b81f5622e1f35d57a9556937')
                             .set('format','jsonp')
-                            //.set('query','kingdom hearts')
-                            //.set('resources','game')
-                            .set('json_callback','ng_jsonp_callback_0');
-        let url = 'https://www.giantbomb.com/api/games/';
+                            .set('limit','10')
+                            .set('query','kingdom hearts')
+                            .set('resources','game')
+                            .set('json_callback','callback');
+                            //detalhe que fez o codigo funcionar, chamar a função de callback do mesmo jeito que o .jsonp iria injetar na chamada
+                            //o importante é:
+                            //.set('json_callback','ng_jsonp_callback_0'); e return this.httpClient.jsonp(`${url}?${params}`,"callback");
+                            // ou .set('json_callback','callback'); e return this.httpClient.jsonp(`${url}?${params}`,"json_callback");
+                            
+        let url = 'https://www.giantbomb.com/api/search/';
         let params = httpParams.toString();
-        return this.httpClient.jsonp(`${url}?${params}`,"callback");
+        return this.httpClient.jsonp(`${url}?${params}`,"json_callback");
         //return this.httpClient.get(url,{params:httpParams});
 
         /*
