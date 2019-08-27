@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+//import { HttpClientModule } from '@angular/common/http'
+import { HttpClientJsonpModule , HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { MainPageLayoutComponent } from './layouts/main-page-layout/main-page-la
 import { ResumeCardComponent } from './components/resume-card/resume-card.component';
 import { DescriptionCardComponent } from './components/description-card/description-card.component';
 import { ApiService } from './services/api.service';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { ApiService } from './services/api.service';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    CommonModule,
+    HttpClientJsonpModule,
     ReactiveFormsModule
   ],
   providers: [ApiService],

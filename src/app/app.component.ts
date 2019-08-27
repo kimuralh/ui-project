@@ -16,6 +16,7 @@ export class AppComponent {
     (
       data =>
       {
+        
         this.lsttitles = data['results'];
         console.log(this.lsttitles);
       }
