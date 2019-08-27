@@ -21,6 +21,6 @@ export class Title{
     resource_type
     */
     description:string;
-    image:String[];
+    image:string;
     
 }
