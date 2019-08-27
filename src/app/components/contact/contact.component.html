@@ -1,14 +1,29 @@
 <div class="contact-container">
-  <h1> Formulário para Contato </h1>
-  <form [formGroup]="contatoForm" (ngSubmit) = "submitFormulario()" class = "contact-form">
-    <div class="form-input">
-      <p>Nome</p>
-      <input type="text" class="" placeholder="Digite seu nome" formControlName = "name">
-    </div>
-    <div class="form-input">
-      <p>Email</p>
-      <input type="text" class="" placeholder="Digite seu email" formControlName = "email">
-    </div>
-    <button type="submit" class="form-button" > Submit </button>
-  </form>
+  <div class="contact-form-container">
+      <div class="form-text">
+          <h3> Inscreva - se </h3>
+          <p> Fique de olho nas novidades de seus jogos favoritos! Basta cadastrar seu nome e email que iremos te deixar atualizado de tudo que acontece no mundo dos games</p>
+      </div>
+      <form [formGroup]="contatoForm" (ngSubmit) = "submitFormulario()" class = "contact-form">
+        <div class="form-input">
+          <p>Nome</p>
+          <input type="text" class="" placeholder="Digite seu nome" formControlName = "name">
+        </div>
+        <div class="form-input">
+          <p>Email</p>
+          <input type="text" class="" placeholder="Digite seu email" formControlName = "email">
+        </div>
+        <!--
+        <div class="form-input">
+            <p>Mensagem</p>
+            <textarea class="" placeholder="Digite sua mensagem" formControlName = "mensagem">
+          </div>
+        
+        -->
+        <button type="submit" class="form-button" > Submit </button>
+      </form>
+  </div>
+  <div class="contact-sobre">
+
+  </div>
 </div>
