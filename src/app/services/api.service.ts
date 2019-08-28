@@ -24,7 +24,7 @@ export class ApiService
                             //o importante é:
                             //.set('json_callback','ng_jsonp_callback_0'); e return this.httpClient.jsonp(`${url}?${params}`,"callback");
                             // ou .set('json_callback','callback'); e return this.httpClient.jsonp(`${url}?${params}`,"json_callback");
-                            
+
         let url = 'https://www.giantbomb.com/api/search/';
         let params = httpParams.toString();
         return this.httpClient.jsonp(`${url}?${params}`,"json_callback");
@@ -46,5 +46,16 @@ export class ApiService
         //funciona provisoriamente com essa url pois ele faz as mudanças para você
         */
 
+        /*
+        {
+            "/api/": {
+                "target": "http://localhost:8080/",
+                "secure": false,
+                "changeOrigin": true
+            }
+        }
+        ng serve --host 0.0.0.0 --proxy-config proxy.conf.json 
+
+        */
     }
 }

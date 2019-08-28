@@ -34,8 +34,8 @@ export class MainPageLayoutComponent implements OnInit {
     {src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'},
     {src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'},
     {src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'},
-    {src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'},
-    {src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'},
+    //{src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'},
+    //{src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'},
     {src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'} 
   ]
   //cards = [this.card1,this.card2,this.card3]

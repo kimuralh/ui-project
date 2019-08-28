@@ -13,7 +13,9 @@
             height: 400px;
             display: flex;
             flex-direction: row;
-            //box-shadow: 3px 3px 20px 20px lightgray;
+            -webkit-box-shadow: 0px 0px 15px 2px rgba(14,15,15,0.22);
+            -moz-box-shadow: 0px 0px 15px 2px rgba(14,15,15,0.22);
+            box-shadow: 0px 0px 15px 2px rgba(14,15,15,0.22);
             
         }
         .description-card:nth-of-type(2n){
@@ -21,5 +23,11 @@
             flex-direction: row-reverse;
             
         }
+    }
+}
+
+@media only screen and (max-width:700px){
+    .description-component{
+        display: none;
     }
 }

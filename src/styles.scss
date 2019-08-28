@@ -2,14 +2,32 @@
 html,
 body {
     height: 100%;
-    background-color: #2CBAE7;
+    background-color: #e3f6f5;
 }
 
 body{
     margin: 0;
     font: 1rem Georgia;
 }
+p{
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 
+    a:link{
+        text-decoration: none;
+    }
+    
+    a:visited{
+        text-decoration: none;
+    }
+    
+    a:hover{
+        text-decoration: none;
+    }
+    
+    a:active{
+        text-decoration: none;
+    }
+}
 a:link{
     text-decoration: none;
 }
@@ -33,27 +51,34 @@ a:active{
 }
 
 .white-border-light{
-    border-color: white;
+    border-color: gray;
     border-style: solid;
     border-width: 2px;
 }
 
 .white-border-heavy{
     padding: 5px;
-    border-color: white;
+    border-color: gray;
     border-style: solid;
     border-width: 4px;
 }
 
+.white-background{
+    background-color: white;
+}
 h1{
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
     font-size: 4em;
-    color: white;
+    color: gray;
 }
 h2{
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
     font-size: 3em;
-    color: white;
+    color: gray;
 }
 h3{
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
     font-size: 2em;
-    color: white;
+    color: gray;
+    margin: 20px 30px;
 }

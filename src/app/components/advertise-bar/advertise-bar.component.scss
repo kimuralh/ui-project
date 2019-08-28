@@ -1,22 +1,39 @@
 .advertise-bar-component{
     width: 100%;
     height: 0px;
-    background-color: lightblue;
+    background-color: #a8d4d4;
     //height: auto;
     transition: all 1.5s;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .advertise-box{
         width: 100%;
 
         display: flex;
         justify-content: center;
- 
-        padding: 30px 0px;
+        align-items: center;
         .adv-text{
-            
+            font-size: 1.5em;
+            margin: 0px 20px;
         }
         .adv-btn{
+            text-decoration: none;
+            border: none;
+            background-color: #bae8e8;
+            padding: 15px 40px;
+            border-color: aliceblue;
+            border-style: solid;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 1.2em;
             
-    
+        }
+        .adv-btn:hover{
+
+            background-color: #2c698d;
+            color: #e3f6f5;
+            border-color: black;
         }
     }
     
@@ -28,12 +45,12 @@
     height: 80px;
     .advertise-box{
         animation-name: showBox;
-        animation-duration: 3s;
+        animation-duration: 3.5s;
     }
     @keyframes showBox {
         0% {
             opacity: 0;
-            translate: (-40rem);
+            //translate: (-40rem);
         }
         100% {
             opacity: 1;
