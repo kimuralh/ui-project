@@ -8,7 +8,7 @@ export class ApiService
 {
     constructor(private httpClient: HttpClient){}
 
-    getTitles():Observable<any> {
+    getTitles(title_string:string,title_limit:string):Observable<any> {
         let httpHeaders = new HttpHeaders().set('dataType','jsonp');
 
         //assim estava funcionando chegar eventualmente o retorno olhando no inspector do chrome, mas o callback em si não era recebido de volta
@@ -16,8 +16,8 @@ export class ApiService
         let httpParams = new HttpParams()
                             .set('api_key','0325079601bfa0c8b81f5622e1f35d57a9556937')
                             .set('format','jsonp')
-                            .set('limit','10')
-                            .set('query','kingdom hearts')
+                            .set('limit',title_limit)
+                            .set('query',title_string)
                             .set('resources','game')
                             .set('json_callback','callback');
                             //detalhe que fez o codigo funcionar, chamar a função de callback do mesmo jeito que o .jsonp iria injetar na chamada

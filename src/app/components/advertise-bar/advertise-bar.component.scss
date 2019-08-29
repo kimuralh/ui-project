@@ -21,22 +21,24 @@
         .adv-btn{
             text-decoration: none;
             border: none;
-            background-color: #bae8e8;
+            background-color: #fff;
+
             padding: 15px 40px;
-            border-color: aliceblue;
-            border-style: solid;
+            //border-color: aliceblue;
+            //border-style: solid;
             border-radius: 10px 10px 10px 10px;
             font-size: 1.2em;
-            
-        }
-        .adv-btn:hover{
 
-            background-color: #2c698d;
-            color: #e3f6f5;
-            border-color: black;
+            &:hover{
+                //background-color: #2c698d;
+                background-color: #bae8e8;
+                color: #2c698d;
+                //border-color: black;
+            }
         }
+
     }
-    
+
     // TO-DO
     //colocar animação aqui de aparecimento da barra
 }

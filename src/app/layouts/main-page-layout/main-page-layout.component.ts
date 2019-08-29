@@ -21,11 +21,12 @@ export class MainPageLayoutComponent implements OnInit {
     {imgSrc: 'https://www.giantbomb.com/api/image/scale_small/706919-chessmaster_2000.jpg', cardText:'Texto 3'}
   ]
   */
- 
+  /*
   descriptionCards : ResumeCard[] = [
     {imgSrc: 'https://www.giantbomb.com/api/image/scale_small/2370498-genesis_desertstrike_2__1_.jpg', cardText:'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for  will uncover many web sites still in their infancy.'},
     {imgSrc: 'https://www.giantbomb.com/api/image/scale_small/621001-1056454795_00.gif', cardText:'Texto 2'},
   ]
+  */
 
   imagens : ImagemGaleria[] = [
     {src: 'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg', grande:'http://www.irmaosbrain.com/wp-content/uploads/2009/01/superego-avatar.jpg'},
@@ -42,9 +43,11 @@ export class MainPageLayoutComponent implements OnInit {
 
   constructor(private _apiService: ApiService){ }
   lsttitles:any[];
+  lstreviews:any[];
   resumeCards:ResumeCard[] = [];
+  descriptionCards:ResumeCard[] = [];
   ngOnInit() {
-    this._apiService.getTitles()
+    this._apiService.getTitles('kingdom hearts','10')
     .subscribe
     (
       data =>
@@ -101,7 +104,38 @@ export class MainPageLayoutComponent implements OnInit {
         
       }
     );
- 
+    // para os cards de review
+    this._apiService.getTitles('resident evil','2')
+    .subscribe
+    (
+      data =>
+      {
+        this.lstreviews = data['results'];
+        let index;
+        console.log(this.lstreviews.length);
+        for (index = 0; index <this.lstreviews.length ; ++index){
+          let textoEditado1 = this.lstreviews[index]['description'];
+          if (this.lstreviews[index]['description'].includes("<h2>Overview<\/h2>")){
+            textoEditado1 = this.lstreviews[index]['description'].split("<h2>Overview<\/h2>")[1];
+          }
+          let textoEditado2 = textoEditado1;
+          if (textoEditado2.includes("<h2>Plot<\/h2>")){
+            textoEditado2 = textoEditado1.split("<h2>Plot<\/h2>")[0];
+          }
+
+          let textoEditado3 = textoEditado2;
+          if (textoEditado3.includes("<h2>Story<\/h2>")){
+            textoEditado3 = textoEditado2.split("<h2>Story</h2>")[0];
+          }
+
+          console.log(textoEditado3,this.lstreviews[index]['image']['medium_url']);
+          //this.resumeCards = [];
+          this.descriptionCards.push(new ResumeCard(this.lstreviews[index]['image']['medium_url'],textoEditado3));
+        }
+        console.log(this.resumeCards);
+        
+      }
+    );
   }
 
 }
