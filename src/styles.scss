@@ -7,7 +7,7 @@ body {
 
 body{
     margin: 0;
-    font: 1rem Georgia;
+    font: 1.2rem Georgia;
 }
 p{
     font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
@@ -82,3 +82,32 @@ h3{
     color: gray;
     margin: 20px 30px;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+    visibility: hidden;
+
+}
+
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+  /*
+    outras opções de customização uteis
+    ::-webkit-scrollbar the scrollbar.
+    ::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+    ::-webkit-scrollbar-thumb the draggable scrolling handle.
+    ::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+    ::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+    ::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+    ::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements.
+*/
